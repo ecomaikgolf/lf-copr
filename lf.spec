@@ -8,14 +8,18 @@ URL:        https://github.com/gokcehan/lf
 Source0:    %{url}/archive/refs/tags/r%{version}.tar.gz
 
 BuildRequires: golang
+BuildRequires: git
 
+# https://github.com/rpm-software-management/rpm/issues/367#issuecomment-350131349
+%global _missing_build_ids_terminate_build 0
+%global debug_package %{nil}
 
 %description
 lf is a terminal file manager written in Go with a heavy inspiration from ranger file manager.
 
 
 %prep
-%autosetup
+%setup -n %{name}-r%{version}
 
 
 %build
@@ -36,4 +40,4 @@ install -m 0755 lf %{buildroot}%{_bindir}/%{name}
 %changelog
 * Mon Oct 21 2024 Ernesto Martínez <me@ecomaikgolf.com>
 
-- Intiial setup
+- Initial setup
