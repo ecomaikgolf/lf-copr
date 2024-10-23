@@ -10,7 +10,6 @@ No downstream patches, built with `env CGO_ENABLED=0 go build -ldflags="-s -w"`
 
 ```
 dnf copr enable ecomaikgolf/lf
-dnf update
 dnf install lf
 ```
 
