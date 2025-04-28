@@ -1,5 +1,5 @@
 Name:       lf
-Version:    34
+Version:    35
 Release:    1
 Summary:    Terminal file manager
 
@@ -38,6 +38,9 @@ install -m 0755 lf %{buildroot}%{_bindir}/%{name}
 
 
 %changelog
+* Mon Apr 4 2025 Ernesto Martínez <me@ecomaikgolf.com>
+- Bump r34 -> r35
+
 * Sat Nov 2 2024 Ernesto Martínez <me@ecomaikgolf.com>
 - Bump r32 -> r33
 
