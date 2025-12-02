@@ -1,5 +1,5 @@
 Name:       lf
-Version:    38
+Version:    39
 Release:    1
 Summary:    Terminal file manager
 
